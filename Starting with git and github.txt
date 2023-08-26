@@ -1,0 +1,168 @@
+﻿Install git
+	$ sudo apt-get install git
+
+Check git version
+	$ git version
+
+Configure user and email
+	$ git config --global user.name "nolssmit"
+	$ git config --global user.email "nols.smit@gmail.com"
+	$ git config --global init.defaultBranch "master"
+
+Check your configurations
+	$ git config --global –list
+
+
+Install git-sizer
+	See: https://installati.one/ubuntu/22.04/git-sizer/
+How to use git-sizer
+	See: https://blog.madkoo.net/2022/02/03/use-git-sizer/
+
+
+
+SSH Keys
+********
+See Git and GitHub for Beginners - Crash Course
+(https://www.youtube.com/watch?v=RGOj5yH7evk&ab_channel=freeCodeCamp.org)
+
+The purpose is to connect local machine to GitHub account
+
+Generate local key
+	$ ssh-keygen -t rsa -b 4096  -C "nols.smit@gmail.com"
+A default file for the key will be proposed:
+	$ Enter file in which to save the key (/home/nols/.ssh/id_rsa):  
+Hit enter to accept.
+You will be asked for a passphrase.
+	$ Enter passphrase (empty for no passphrase): 
+Hit enter for a blank passphrase.
+It will confirm the generation of the private and public key.
+	Your identification has been saved in /home/nols/.ssh/id_rsa
+	Your public key has been saved in /home/nols/.ssh/id_rsa.pub
+	The key fingerprint is:
+	SHA256:3I4okuqJL+N9foGqtTU7GNaZ/IkXuwORBZrtAZqGS2k nols.smit@gmail.com
+	The key's randomart image is:
+	+---[RSA 4096]----+
+	|   . ..          |
+	|. + =  .         |
+	|.E o oo          |
+	|+.  .o.. .       |
+	|.   o.= S .      |
+	|   + B + o       |
+	|  +.=o= * .      |
+	|+.++o=oB         |
+	|=Ooooo+.o        |
+	+----[SHA256]-----+
+
+	id_rsa.pub is the key you are going to upload to your GitHub interface.
+
+Open the public key (id_rsa.pub) with text editor, copy it to the clipboard.
+
+On GitHub, go to Settings | SSH and GPG keys and add a new SSH key. Identify it with a title of your PC/Laptop.
+
+The next step is to let your git command-line interface knows about the key you generated.
+------------------------------------ Nie Nodig -------------------------------
+Start the ssh-agent in the background.
+	$ sudo -s -H
+	# eval "$(ssh-agent -s)"
+It will respond with something like:
+	Agent pid 37699
+
+
+You will be propted for the administrator's password.
+
+	$ exec ssh-agent bash
+------------------------------------------------------------------------------
+	$ ssh-add ~/.ssh/id_rsa
+
+Create an empty repository on GitHub and copy the SSH address to the clipboard
+	(https://github.com/nolssmit/SoftwareDevelopment.git)
+
+Start creating a repository locally
+	$ git init
+Add a reference of the remote repository on GitHub to the local repository
+	$ git remote add origin https://github.com/nolssmit/SoftwareDevelopment.git
+
+Clean the repository
+	$ git rm -rf --cached .
+Add all the files from the folder you are in & it's sub folders
+	$ git add .
+Commit the files you added
+	$ git commit -m "your commit message"
+
+
+Push the commited files to GitHub
+	$ git push origin master
+  It will ask your username and password
+  	username: nolssmit
+	password: <the personal access token>
+
+
+Branches
+========
+
+Create a new branch
+	$ git checkout -b feature-readme-instructions
+
+Verify your branches
+	$  git branch
+
+it will respond
+	* feature-readme-instructions       (the * indicate the active branch)
+  	master
+	
+Switch to master
+	$ git checkout master
+
+Verify your branches
+  	feature-readme-instructions
+	* master
+
+Swith again back to the new branch
+	$ git checkout feature-readme-instructions 
+
+Create a README.md file and save
+
+Check the status
+	$ git status
+
+It will respond with:
+	On branch feature-readme-instructions
+	Changes not staged for commit:
+	  (use "git add <file>..." to update what will be committed)
+	  (use "git restore <file>..." to discard changes in working directory)
+		modified:   Personal Access Token.txt
+
+	Untracked files:
+	  (use "git add <file>..." to include in what will be committed)
+		README.md
+
+Add the new file and commit:
+	$ git add README.md
+	$ git commit -m "Added REDME.md"
+
+Check the difference in the new branch
+	$ git diff feature-readme-instructions 
+
+It will respond
+	diff --git a/Personal Access Token.txt b/Personal Access Token.txt
+	index f409385..26b8f5b 100644
+	--- a/Personal Access Token.txt 
+	+++ b/Personal Access Token.txt 
+	@@ -1 +1 @@
+	-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
+	+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
+
+Do a push to GitHub
+	$ git push --set-upstream origin feature-readme-instructions   or
+	$ git push -u feature-readme-instructions 
+
+On Github, on the new feature-readme-instructions branch, click the button named: Compare & pull request
+		
+
+
+
+
+	
+
+
+
