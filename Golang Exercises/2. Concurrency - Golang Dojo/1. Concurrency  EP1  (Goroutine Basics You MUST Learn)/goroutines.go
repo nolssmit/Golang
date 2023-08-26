@@ -1,0 +1,27 @@
+package main
+
+import (
+	"fmt"
+	"time"
+)
+
+func main() {
+	start := time.Now()
+	defer func() {
+		fmt.Println((time.Since(start)))
+	} ()
+
+	evilNinjas := [] string {"Tommy", "Johnny", "Bobby", "Andy"}
+
+	var evilNinja string 
+	for _, evilNinja  = range evilNinjas {
+		go attack(evilNinja)
+	}
+
+	time.Sleep(time.Second * 2)
+}
+
+func attack(target string) {
+	fmt.Println("Thowing ninja stars at ", target)
+	time.Sleep(time.Second)
+}
