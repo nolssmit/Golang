@@ -3,48 +3,45 @@ package main
 import (
 	"fmt"
 	"math"
-//	"math.Pi"
-//	"math.Pow"
 )
 
-type square struct{
-	length int
-	width int
+type shape interface {
+	area() float64
+}
+type square struct {
+	length float64
+	width  float64
 }
 
-func (s square) calcArea() int {
-	return s.length * s.width
-}
-
-type circle struct{
+type circle struct {
 	radius float64
 }
 
-func (c circle) calcArea() float64 {
+func (s square) area() float64 {
+	return s.length * s.width
+}
+
+func (c circle) area() float64 {
 	return math.Pi * math.Pow(c.radius, 2)
 }
 
-type shape interface{
-	calcArea()
+func info(s shape) float64 {
+	return s.area()
 }
 
-func calcSomeArea(s shape){
-	s.calcArea()
-}
-
-func main(){
-	sq := square{
+func main() {
+	s1 := square{
 		length: 6,
-		width: 8,
+		width:  8,
 	}
-	ci := circle{
+
+	c1 := circle{
 		radius: 100,
 	}
 
-	// fmt.Println("Area square =",sq.calcArea())
-	// fmt.Printf("Area circle = %.2f\n", ci.calcArea())
-	// fmt.Println("Area square =", calcSomeArea(sq))
-	// fmt.Printf("Area circle = %.2f\n", calcSomeArea(ci))	
+	fmt.Println("Area square =", s1.area())
+	fmt.Printf("Area circle = %.2f\n", c1.area())
 
-	calcSomeArea(sq)
+	fmt.Println("Area of rectangle is:", info(s1))
+	fmt.Printf("Area of circle is: %.2f\n", info(c1))
 }
