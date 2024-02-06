@@ -1,1 +1,3 @@
-https://www.youtube.com/watch?v=LgCmPHqAuf4&list=PLve39GJ2D71wSwRQLp_h8B60pKgS85StC&index=2
+version https://git-lfs.github.com/spec/v1
+oid sha256:f44fd2af8f63ad4861428aecd425383d6e3b7be87ffc2dc8de6813bbd4991366
+size 91

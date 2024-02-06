@@ -1,2 +1,3 @@
-See the following:
-https://www.youtube.com/watch?v=LHhsNa_Kgns
+version https://git-lfs.github.com/spec/v1
+oid sha256:de653f5dd7b5eb812ed6e1e3d53003871e54a04472bcb145e1515cd461481200
+size 62
