@@ -2,16 +2,12 @@ package main
 
 import (
 	"fmt"
-	"testing"
 )
 
 func main() {
-	fmt.Println("Hello World!")
+	fmt.Println("The sum is: ", Add(3, 4))
 }
 
-func TestAdd(*testing.T){
-	total := Add(5,5)
-	if total != 10 {
-		t.Errorf("Sum was incorrect")
-	}
+func Add(a int, b int) int {
+	return a + b
 }
