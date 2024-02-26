@@ -12,7 +12,7 @@ func (d dog) walk(){
 	fmt.Println("My name is", d.first, "and I'm walking.")
 }
 
-func (d *dog) run(){
+func (d dog) run(){
 	fmt.Println("My name is", d.first, "and I'm running.")
 }
 
@@ -22,17 +22,22 @@ type youngin interface{
 }
 
 func youngRun(y youngin){
+	y.walk()
 	y.run()
 }
 
 func main(){
-	d1 := dog{"Spike"}
-	d1.walk()
-	d1.run()
-	// youngRun(d1)
+	d1 := dog{"Henry"}
+	youngRun(d1)
 
-	d2 := &dog{"Porthos"}
-	d2.walk()
-	d2.run()
+	d2 := dog{"padget"}
 	youngRun(d2)
+
+	d2 = d2.changeName("Rover")
+	youngRun(d2)
+}
+
+func (d dog) changeName(s string) dog{
+	d.first = s
+	return d
 }
