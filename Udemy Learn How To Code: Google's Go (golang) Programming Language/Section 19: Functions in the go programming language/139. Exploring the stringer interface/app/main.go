@@ -31,3 +31,4 @@ func main() {
 	fmt.Println(b)
 	fmt.Println(n)
 }
+// https://pkg.go.dev/fmt#Stringer

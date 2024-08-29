@@ -10,6 +10,7 @@ type person struct {
 	first string
 }
 
+// Attach a method to a type
 func (p person) speak() {
 	fmt.Println("I am", p.first)
 }

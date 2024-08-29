@@ -23,7 +23,7 @@ func (c count) String() string {
 }
 
 func logInfo(s fmt.Stringer) {
-	log.Println("LOG FROM 138", s.String())
+	log.Println("LOG FROM 138: ", s.String())
 }
 
 func main() {

@@ -11,6 +11,8 @@ func main() {
 
 // func (r receiver) identifier(p parameters) (return(s)) {code}
 
+// The function's final incomming parameter, a variadic parameter is a slice of int
+// .. and unlimited number of arguments of a certain type
 func sum(ii ...int) int {
 	fmt.Println(ii)
 	fmt.Printf("%T\n", ii)
@@ -22,3 +24,5 @@ func sum(ii ...int) int {
 	return n
 }
 
+// https://go.dev/ref/spec#Keywords
+// See: "Passing arguments to ... parameters"
