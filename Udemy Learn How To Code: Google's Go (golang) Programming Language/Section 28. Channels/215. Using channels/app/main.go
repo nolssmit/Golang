@@ -8,22 +8,23 @@ func main() {
 
 	c := make(chan int)
 
-// Send
+// Send to channel
+	go chanSend(c)
 
-	go foo(c)
-// Receive
-	go bar(c) // will print nothing
-	bar(c)
+// Receive from channel
+	go chanReceive(c) // will print nothing
+
+	chanReceive(c)	  // will print 44
 
 	fmt.Println("About to exit")
 }
 
-// Send	to
-func foo(c chan<- int) {
+// Send	to channel
+func chanSend(c chan<- int) {
 	c <- 44
 }
-// Receive from
-func bar(c <-chan int) {
 
-	fmt.Printf("function bar: channel type: %T, channel value: %d\n",c, <-c)
+// Receive from channel
+func chanReceive(c <-chan int) {
+	fmt.Printf("function chanReceive: channel type: %T, channel value: %d\n",c, <-c)
 }
