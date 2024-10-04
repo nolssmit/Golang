@@ -1,3 +1,4 @@
+// Package main is the main package
 package main
 
 import (
@@ -5,6 +6,7 @@ import (
 	"log"
 )
 
+// nogateMathError is an error type
 type nogateMathError struct {
 	lat  string
 	long string	
