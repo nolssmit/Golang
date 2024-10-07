@@ -1,5 +1,5 @@
 
-// package dog is a package to convert human years to dog years
+// Package dog allows us to more fully understand dogs.
 package dog
 
 // Years converts human years to dog years
