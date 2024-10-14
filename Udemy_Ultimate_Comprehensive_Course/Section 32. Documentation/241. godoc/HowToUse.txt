@@ -1,0 +1,9 @@
+1. Install Golang XTools  
+	$ sudo apt install golang-golang-x-tools
+
+
+2. Define local server using a terminal window
+	$ godoc -http=localhost:8080
+
+3. Open local documentation in browser
+	Use address  localhost:8080 

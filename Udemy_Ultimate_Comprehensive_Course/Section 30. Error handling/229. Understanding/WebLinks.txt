@@ -1,0 +1,3 @@
+https://go.dev/blog/error-handling-and-go
+
+https://go.dev/doc/faq#exceptions

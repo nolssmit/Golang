@@ -1,0 +1,18 @@
+Godoc: documenting Go code
+
+https://go.dev/blog/godoc
+
+Go documentation
+https://pkg.go.dev/#
+
+Documentation about tue fmt package
+https://pkg.go.dev/fmt@go1.23.2
+
+Third Party Packages
+https://pkg.go.dev/search?q=third+party+packages
+
+Third Party package for UUID
+https://pkg.go.dev/search?q=UUID
+
+Command Documentation
+https://go.dev/doc/cmd
