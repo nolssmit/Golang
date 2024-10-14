@@ -1,9 +1,3 @@
-1. Install Golang XTools  
-	$ sudo apt install golang-golang-x-tools
-
-
-2. Define local server using a terminal window
-	$ godoc -http=localhost:8080
-
-3. Open local documentation in browser
-	Use address  localhost:8080 
+version https://git-lfs.github.com/spec/v1
+oid sha256:5ef25dedb01e01fefe9d1b28fd4e0424de684a0a331a515a3a1e34e9f1c9bb3c
+size 217
