@@ -4,7 +4,7 @@ package main
 import (
 	"fmt"
 
-	"/Golang/GolangPackages/puppy"
+	"github.com/nolssmit/Golang/GolangPackages/puppy"
 )
 
 func main() {
