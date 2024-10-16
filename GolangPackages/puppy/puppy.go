@@ -1,7 +1,7 @@
 package puppy
 
 import (
-//	"github.com/nolssmit/Golang/GolangPackages/dog"
+	"github.com/nolssmit/Golang/GolangPackages/dog"
 )
 
 func Bark() string {
@@ -12,10 +12,10 @@ func Barks() string {
 	return "Woof! Woof! Woof!"
 }
 
-// func BigBark() string {
-// 	return dog.WhenGrounUp(Bark())
-// }
+func BigBark() string {
+	return dog.WhenGrownUp(Bark())
+}
 
-// func BigBarks() string {
-// 	return dog.WhenGrounUp(Barks())
-// }
+func BigBarks() string {
+	return dog.WhenGrownUp(Barks())
+}

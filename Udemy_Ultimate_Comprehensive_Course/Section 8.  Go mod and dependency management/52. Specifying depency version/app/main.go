@@ -4,12 +4,12 @@ package main
 import (
 	"fmt"
 
-	"github.com/nolssmit/puppy"
+	"github.com/nolssmit/Golang/GolangPackages/puppy"
 )
 
 func main() {
 //	puppy.From13()
-	puppy.From11()
+//	puppy.From11()
 
 	s1 := puppy.Bark()
 	s2 := puppy.Barks()
