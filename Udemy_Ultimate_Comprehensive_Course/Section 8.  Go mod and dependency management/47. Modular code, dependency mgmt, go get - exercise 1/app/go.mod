@@ -1,7 +1,5 @@
-module mainmodule
+module github.com/nolssmit/GolangPackages/puppy
 
-go 1.21.0
+go 1.23.1
 
-require github.com/nolssmit/puppy v0.0.0-20230908130124-6b8dc9596e9b
-
-require github.com/nolssmit/dog v0.0.0-20230904132008-953c5292569c // indirect
+require github.com/nolssmit/Golang/GolangPackages/puppy v0.0.0-20241015122649-980b2f2c6798
