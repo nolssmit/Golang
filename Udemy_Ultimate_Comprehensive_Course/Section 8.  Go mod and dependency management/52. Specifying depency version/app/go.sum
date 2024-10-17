@@ -1,2 +1,6 @@
-github.com/nolssmit/Golang/GolangPackages/puppy v0.0.0-20241016140631-8843277d9e16 h1:v4dvY00yz8WVvZwjWvBiNE7qkmVKXwq8nSbQOYJr0bQ=
-github.com/nolssmit/Golang/GolangPackages/puppy v0.0.0-20241016140631-8843277d9e16/go.mod h1:zbiVAS6KnbI1TzukHy0UbYdpc23SkZrN7gdmnnidmGI=
+github.com/nolssmit/Golang/GolangPackages/dog v0.0.0-20241016140631-8843277d9e16 h1:CTz8c60EkTbxK99L5CddOepcS+iX2NHy1swhnSw/hjs=
+github.com/nolssmit/Golang/GolangPackages/dog v0.0.0-20241016140631-8843277d9e16/go.mod h1:0UVTyvySntvxsVo4Y0/UP1ZFH/yuijxq9kclFNbtKDM=
+github.com/nolssmit/Golang/GolangPackages/puppy v0.0.0-20241016141706-4226036b9192 h1:YW6aCKuF4XIMWjZbzt0Q3KqFY0nG4eYNZ2D6YHxzIgc=
+github.com/nolssmit/Golang/GolangPackages/puppy v0.0.0-20241016141706-4226036b9192/go.mod h1:09YkJnw2TX+FJmCL392MT6S64Svp3ZOvtjsiG00Gd5k=
+github.com/nolssmit/Golang/GolangPackages/puppy v0.0.0-20241017135113-0e83cf8ee459 h1:ywtmokjDAiWcOAIN0/FooH33SRw1x6Z1vzbA5v51KpY=
+github.com/nolssmit/Golang/GolangPackages/puppy v0.0.0-20241017135113-0e83cf8ee459/go.mod h1:09YkJnw2TX+FJmCL392MT6S64Svp3ZOvtjsiG00Gd5k=
