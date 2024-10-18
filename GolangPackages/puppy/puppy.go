@@ -1,6 +1,7 @@
 package puppy
 
 import (
+	"fmt"
 	"github.com/nolssmit/Golang/GolangPackages/dog"
 )
 
@@ -18,4 +19,8 @@ func BigBark() string {
 
 func BigBarks() string {
 	return dog.WhenGrownUp(Barks())
+}
+
+func From13(){
+	fmt.Println("I'm from version 1.3.0")
 }
