@@ -1,3 +1,3 @@
-module github.com/nolssmit/Golang/GolangPackages/dog
+module dog
 
 go 1.23.1
