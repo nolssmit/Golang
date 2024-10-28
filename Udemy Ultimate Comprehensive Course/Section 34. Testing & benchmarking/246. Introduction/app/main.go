@@ -16,5 +16,5 @@ func mySum(xi ...int) int {
 	for _, v := range xi {
 		sum += v
 	}
-	return sum
+	return sum  // the test will fail if you return sum + 1
 	}
