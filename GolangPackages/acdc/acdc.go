@@ -3,7 +3,7 @@ package acdc
 
 import "fmt"
 
-// Example
+// ExampleSum show an example how to use
 func ExampleSum() {
 	fmt.Println(Sum(9, 10))
 	// Output: 
