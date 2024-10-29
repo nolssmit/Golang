@@ -11,3 +11,4 @@ func main() {
 }
 
 // example: https://pkg.go.dev/strings#ToUpper
+// Also read: https://go.dev/blog/

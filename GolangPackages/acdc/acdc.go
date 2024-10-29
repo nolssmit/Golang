@@ -3,11 +3,10 @@ package acdc
 
 import "fmt"
 
-// ExampleSum show an example how to use
+// Example
 func ExampleSum() {
 	fmt.Println(Sum(9, 10))
-	// Output: 
-	// 19
+	// Output: 19
 }
 
 // Sum adds an unlimited number of of type int
