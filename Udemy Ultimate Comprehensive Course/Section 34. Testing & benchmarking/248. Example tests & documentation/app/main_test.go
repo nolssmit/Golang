@@ -1,17 +1,9 @@
 package main_test
 
 import (
-	"fmt"
 	"testing"
 	"github.com/nolssmit/Golang/GolangPackages/acdc"
 )
-
-// ExampleSum
-func ExampleSum() {
-	fmt.Println(acdc.Sum(9, 10))
-	// Output: 
-	// 19
-}
 
 // TestSum let you run a test on the Sum function in this package 
 func TestSum(t *testing.T) {
