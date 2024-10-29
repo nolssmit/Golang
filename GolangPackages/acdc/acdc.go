@@ -3,12 +3,6 @@ package acdc
 
 import ("fmt")
 
-func ExampleSum() {
-	fmt.Println(Sum(2, 3))
-	// Output:
-	// 7
-}
-
 // Sum adds an unlimited number of of type int
 func Sum(x1 ... int) int {
 	s := 0
