@@ -1,8 +1,6 @@
 // Package acdc asks if you are ready to rock
 package acdc
 
-import ("fmt")
-
 // Sum adds an unlimited number of of type int
 func Sum(x1 ... int) int {
 	s := 0
