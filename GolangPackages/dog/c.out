@@ -1,0 +1,4 @@
+mode: set
+github.com/nolssmit/Golang/GolangPackages/dog/dog.go:9.35,11.2 1 0
+github.com/nolssmit/Golang/GolangPackages/dog/dog.go:14.23,16.2 1 1
+github.com/nolssmit/Golang/GolangPackages/dog/dog.go:20.26,22.2 1 1
