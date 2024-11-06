@@ -1,9 +1,9 @@
-// package word counts words in a string
+// package word provides custom functions for working with strings and words.
 package word
 
 import "strings"
 
-// UseCount returns a map of words and their number of occurrences
+// UseCount returns the number of times each word is used in a string.
 func UseCount(s string) map[string]int {
 	xs := strings.Fields(s)
 	m := make(map[string]int)
@@ -13,7 +13,7 @@ func UseCount(s string) map[string]int {
 	return m
 }
 
-// Count returns the number of words in a string
+// Count returns the number of words in a string.
 func Count(s string) int {
 	// write the code for this func
      return len(strings.Fields(s))
