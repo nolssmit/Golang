@@ -2,11 +2,10 @@ package word
 
 import (
 	"fmt"
-//	"strings"
 	"testing"
-)
 
-const myQuote = `Robert Cohn was once once middleweight boxing champion Robert`
+	"github.com/nolssmit/Golang/GolangPackages/quote"
+)
 
 // func TestUseCount(myQuote string) map[string]int {
 // 	xs := strings.Fields(myQuote)
@@ -16,19 +15,45 @@ const myQuote = `Robert Cohn was once once middleweight boxing champion Robert`
 // 		m[v]++
 // 	}
 
-// 	if m !=  map[Cohn:1 Robert:1 boxing:1 champion:1 middleweight:1 once:1 was:1] 	 
+// 	if m !=  map[Cohn:1 Robert:1 boxing:1 champion:1 middleweight:1 once:1 was:1]
 // 	{
 // 				t.Error("got", m, "want", xs)
-// 	}		
-// }	
+// 	}
+// }
 
-
-// TestCount tests the Count function
-func TestCount(t *testing.T) {	
-	n := Count(myQuote)
-    fmt.Println("myQuote: ", myQuote) 
-
-	if n != 9 {
-		t.Error("got", n, "want", 9)
+func BenchmarkCount(b *testing.B) {
+	for i := 0; i < b.N; i++ {
+		Count(quote.SunAlso)
 	}
 }
+
+func BenchmarkUseCount(b *testing.B) {
+	for i := 0; i < b.N; i++ {
+		UseCount(quote.SunAlso)
+	}
+}
+
+func TestUseCount(t *testing.T) {
+	m := UseCount("one two three")
+
+	if m["once"] != 2 {
+		t.Error("got", m["once"], "want", 2)
+	}
+}
+
+// TestCount tests the Count function
+func TestCount(t *testing.T) {
+	n := Count("one two three")
+
+	if n != 3 {
+		t.Error("got", n, "want", 3)
+	}
+}
+
+func ExampleUseCount() {
+	fmt.Println(Count("one two three"))
+	// Output:
+	// 3
+}
+
+

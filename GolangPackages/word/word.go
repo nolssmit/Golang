@@ -1,4 +1,4 @@
-// package word provides custom functions for working with strings and words.
+// Package word provides custom functions for working with strings and words.
 package word
 
 import "strings"
