@@ -1,12 +1,12 @@
 package word
 
 import (
-//	"fmt"
+	"fmt"
 //	"strings"
 	"testing"
 )
 
-const myQoute = `Robert Cohn was once once middleweight boxing champion Robert`
+const myQuote = `Robert Cohn was once once middleweight boxing champion Robert`
 
 // func TestUseCount(myQuote string) map[string]int {
 // 	xs := strings.Fields(myQuote)
@@ -22,10 +22,13 @@ const myQoute = `Robert Cohn was once once middleweight boxing champion Robert`
 // 	}		
 // }	
 
-func TestCount(t *testing.T) {	
-	n := Count(myQoute)
 
-	if n != 70 {
-		t.Error("got", n, "want", 7)
+// TestCount tests the Count function
+func TestCount(t *testing.T) {	
+	n := Count(myQuote)
+    fmt.Println("myQuote: ", myQuote) 
+
+	if n != 9 {
+		t.Error("got", n, "want", 9)
 	}
 }
