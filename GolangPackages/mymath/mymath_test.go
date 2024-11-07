@@ -9,8 +9,8 @@ func TestCenteredAvg(t *testing.T) {
 	xi := []int{4, 8, 15, 16, 23, 42}
 	v := CenteredAvg(xi)
 
-	if v != 11.0 {
-		t.Error("Expected 11.0, got", v)
+	if v != 15.5 {
+		t.Error("got", v, "want 15.5")
 	}
 }
 
@@ -26,6 +26,6 @@ func ExampleCenteredAvg() {
 
 	fmt.Println(v)
 	// Output: 
-	// 11
+	// 15.5
 }	
 
