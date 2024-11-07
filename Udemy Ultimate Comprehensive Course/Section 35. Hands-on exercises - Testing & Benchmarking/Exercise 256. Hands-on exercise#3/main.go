@@ -2,7 +2,7 @@ package main
 
 import (
 	"fmt"
-	"github.com/GoesToEleven/go-programming/code_samples/010-ninja-level-thirteen/03/01-code-starting/mymath"
+	"github.com/nolssmit/Golang/GolangPackages/mymath"
 )
 
 func main() {
