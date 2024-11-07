@@ -1,2 +1,4 @@
-github.com/nolssmit/Golang/GolangPackages/quote v0.0.0-20241106150844-3fc98d4d5c4d h1:cdTxyFUhZSqGKzfqDu9wkXdU7/NlYMxAKDnIxTa5H7w=
-github.com/nolssmit/Golang/GolangPackages/quote v0.0.0-20241106150844-3fc98d4d5c4d/go.mod h1:uakuGV3EU6Q6JW3WT/tAgxdoKzi9xWygFrhnydLUvR0=
+github.com/nolssmit/Golang/GolangPackages/quote v0.0.0-20241107121625-adbfba37b533 h1:zqUQhHwCI4l0z9NOp1Cx1snxZeU41DSdYsEOer5mLmQ=
+github.com/nolssmit/Golang/GolangPackages/quote v0.0.0-20241107121625-adbfba37b533/go.mod h1:uakuGV3EU6Q6JW3WT/tAgxdoKzi9xWygFrhnydLUvR0=
+github.com/nolssmit/Golang/GolangPackages/word v0.0.0-20241107122604-4832a1dbf615 h1:mWf/zMOfdvk6qoHF/vIgfGKaZNCg8FCn4G3i9UTerWY=
+github.com/nolssmit/Golang/GolangPackages/word v0.0.0-20241107122604-4832a1dbf615/go.mod h1:UagYXFV4ZsuYaRKVape9WJwaK+8cyQS2+WTKCUxIYWw=
