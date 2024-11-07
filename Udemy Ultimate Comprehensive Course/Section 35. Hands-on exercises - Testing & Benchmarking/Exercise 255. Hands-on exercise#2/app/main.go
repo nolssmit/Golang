@@ -2,8 +2,8 @@ package main
 
 import (
 	"fmt"
-	"github.com/nolssmit/Golang/GolangPackages/quote"
 	"github.com/nolssmit/Golang/GolangPackages/word"
+	"github.com/nolssmit/Golang/GolangPackages/quote"
 )
 
 func main() {

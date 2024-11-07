@@ -7,19 +7,6 @@ import (
 	"github.com/nolssmit/Golang/GolangPackages/quote"
 )
 
-// func TestUseCount(myQuote string) map[string]int {
-// 	xs := strings.Fields(myQuote)
-
-// 	m := make(map[string] int)
-// 	for _, v := range xs {
-// 		m[v]++
-// 	}
-
-// 	if m !=  map[Cohn:1 Robert:1 boxing:1 champion:1 middleweight:1 once:1 was:1]
-// 	{
-// 				t.Error("got", m, "want", xs)
-// 	}
-// }
 
 func BenchmarkCount(b *testing.B) {
 	for i := 0; i < b.N; i++ {
@@ -35,7 +22,7 @@ func BenchmarkUseCount(b *testing.B) {
 
 // func TestUseCount(t *testing.T) {
 // 	m := UseCount("one two three")
-
+//
 // 	if m != 2 {
 // 		t.Error("got", m, "want", 2)
 // 	}
