@@ -15,6 +15,5 @@ func UseCount(s string) map[string]int {
 
 // Count returns the number of words in a string.
 func Count(s string) int {
-	// write the code for this func
      return len(strings.Fields(s))
 }
