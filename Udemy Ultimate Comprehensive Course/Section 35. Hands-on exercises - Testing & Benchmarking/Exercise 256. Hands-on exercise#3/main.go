@@ -12,6 +12,7 @@ func main() {
 	}
 }
 
+// gen generates data to pass into CenteredAvg
 func gen() [][]int {
 	a := []int{1, 4, 6, 8, 100}
 	b := []int{0, 8, 10, 1000}
