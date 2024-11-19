@@ -11,7 +11,7 @@ func main() {
 	// FAN OUT
 	// Distribute the sq work across two goroutines that both read from in.
 	c1 := sq(in)
-    c2 := sq(in)
+   	c2 := sq(in)
 
 	// FAN IN
 	// Consume the merged output from multiple channels
